@@ -87,6 +87,36 @@ console.log(e<=f)
 // output: false, because e is greater than f
 
 
+// logical operateors
+h=9
+n=10
+// example 1
+console.log(true && true)
+// output: true, because both are true
+
+// example 2
+console.log(true && false)
+// output: false, because one is true and other is false
+
+// example 3
+console.log(false || true)
+// output: true, because one is true and other is false
+
+// example 4
+console.log(false || false)
+// output: false, because both are false
+
+// example 5
+console.log(!true)
+// output: false, because !true is false
+
+// example 6
+console.log(!false)
+// output: true, because !false is true
+
+
+
+
 
 
 
