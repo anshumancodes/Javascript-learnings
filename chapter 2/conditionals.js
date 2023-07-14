@@ -32,3 +32,16 @@ else {
 // if you enter the age less than 18 then the output will be "You are not eligible to vote"
 
 
+
+
+
+//----------------------------------------------------------------------switch case---------------------------------------------------------------------------------------------
+
+
+
+// lets talk about switch case
+// we can use switch case as a alternative of if else if else
+// switch case is used to execute a block of code based on different cases
+
+
+
