@@ -117,7 +117,18 @@ console.log(!false)
 
 
 
+// turnary operator
 
+// syntax: condition ? expression1 : expression2
+// if the condition is true then expression1 will be executed
+// if the condition is false then expression2 will be executed
+
+// lets understand that with an example
+
+let money = 10; //you can change the value of money to see the output
+
+let result = money > 100 ? "You can buy a gift" : "You can't buy a gift";
+console.log(result);
 
 
 
