@@ -43,5 +43,28 @@ else {
 // we can use switch case as a alternative of if else if else
 // switch case is used to execute a block of code based on different cases
 
+// lets understand switch case with an example
+
+let fruit = prompt("Enter a fruit name , you want to buy : ");
+
+switch (fruit) {
+  case "pomegranate":
+    console.log("Not available!");
+
+    break; //unlike if else even if the condition is true it will check the other cases too, so to stop that we use break
+  case "apple":
+    console.log("Available!");
+    break;
+
+  case "banana":
+    console.log("Available!");
+    break;
+  case "mango":
+    console.log("Available!");
+    break;
+  
+
+}
+
 
 
