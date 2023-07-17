@@ -22,8 +22,9 @@ while (a<25){
 
 let b=0;
 do {
-    b++;
     console.log(b);
+    b++;
+    
 } while (b<10);
 
 // do while loop execute the 'do' part first and then checks the conditioncd 
