@@ -35,7 +35,7 @@ if (num % 3 == 0 || num % 2 == 0) {
     console.log("The number is divisible by 3 or 2");
 }
 else {
-    console.log("The number is not divisible by both 3 and 2");
+    console.log("The number is not divisible by both b3 and 2");
 }
 
 // question 5 : check if user is eligible for driving or not using ternary operator
