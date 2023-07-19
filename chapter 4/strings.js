@@ -44,5 +44,23 @@ console.log(data)
 
 // inside a we can use both single quotes and double quotes without any problem
 
+// escape squences in strings
+
+// escape sequences are used to insert special characters in strings
+
+// here is a list of escape sequences in javascript
+
+// \'	single quote
+// \"	double quote
+
+// let see that with a example
+
+let teacher="teacher\'s day";
+
+console.log(teacher); // output : teacher's day
+
+// we use backslash to escape a character
+// in casess like this where we have to use quotes inside a string we use escape sequences
+
 
 
