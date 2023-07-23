@@ -43,3 +43,14 @@ marks.unshift(108)
 console.log(marks)
 
 
+// delete operator - delete a element from a array
+
+let num = [1,2,3,4,5,6,7,8,9]
+delete num[2]
+console.log(num)
+
+// [note : delete operator will not change the length of the array]
+
+
+
+
