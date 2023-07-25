@@ -74,7 +74,7 @@ console.log(sortArray)  // modifies the original array in a ascending order acco
 let reverseArray=sortArray.reverse()
 
 console.log(reverseArray)  // modifies the original array in a descending order according to the first digit for example if there is 2 numbers lets say 2 and 100 then sort will keep
-                            // 2 first and then 100 because 1 is smaller than 2 so it will keep 2 first and then 100
+                           // 2 first and then 100 because 1 is smaller than 2 so it will keep 2 first and then 100
 
 
 
