@@ -29,5 +29,21 @@ let greaterThanTen=num.filter((number)=>{
 )
 console.log("number which are greater than ten are " +greaterThanTen)
 
+// filter method is used to filter out the elements from an array based on a condition , its does not create a new array
+
+
+// reduce method
+
+let arr=[1,2,3,4,5,6,7,8,9,10]
+
+const sumArray=arr.reduce((accumulator,currentValue)=>{
+    return accumulator+currentValue
+})
+
+console.log(sumArray)
+
+
+
+
 
 
