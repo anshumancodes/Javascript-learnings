@@ -42,6 +42,21 @@ const sumArray=arr.reduce((accumulator,currentValue)=>{
 
 console.log(sumArray)
 
+//The reducer walks through the array element-by-element, at each step adding the current array value to the result from the previous step (this result is the running sum of all the previous steps) — until there are no more elements to add.
+// 
+
+/* so basically it will add first two elements and then Value + 
+
+3rd element runs and then
+value + 4th element runs and then
+
+value +5 
+
+..... 
+
+until the array ends */
+
+
 
 
 
