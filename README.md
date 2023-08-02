@@ -24,6 +24,10 @@ install prompt-sync by running:
 ```bash
  npm install prompt-sync 
  ```
+
+## Exercises
+ Note: you need you need go through Exercise-1 directory before proceeding to Chapter 6
+ 
 ## Feedback
 
 
