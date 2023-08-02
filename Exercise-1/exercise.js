@@ -1,4 +1,5 @@
 // Exercise 1 - Javascript -learning
+// you need to do this exercise before proceeding to next chapter i.e; chapter 6
 // if you are somone who is learing using this repo: join our discord server: https://discord.gg/fUYGNhghh2
 
 // problem statement: write a js program to generate a random number and let the user guess eat and tell if the user guessed it right or wrong and if the number guessed
