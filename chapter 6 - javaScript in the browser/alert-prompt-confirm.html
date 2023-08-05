@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>window.alert() instructs the browser to display a dialog with an optional message, and to wait until the user
+        dismisses the dialog.
+        <br> Under some conditions — for example, when the user switches tabs — the browser may not actually display a
+        dialog, or may not wait for the user to dismiss the dialog.
+
+
+    </p>
+    <br>
+    <p> syntax </p>
+
+    <code>
+        alert()
+        <br>
+alert(message)
+
+     </code>
+
+
+     <br>
+     <br>
+     <br>
+
+     <p>window.prompt() instructs the browser to display a dialog with an optional message prompting the user to input some text, and to wait until the user either submits the text or cancels the dialog</p>
+
+     <br>
+
+     <p> syntax </p>
+
+     <code>
+        
+        prompt()
+        <br>
+prompt(message)
+<br>
+prompt(message, defaultValue)
+
+ 
+      </code>
+
+      <br>
+      <br>
+      <br>
+
+      window.confirm() instructs the browser to display a dialog with an optional message, and to wait until the user either confirms or cancels the dialog.
+
+Under some conditions — for example, when the user switches tabs — the browser may not actually display a dialog, or may not wait for the user to confirm or cancel the dialog.
+<br>
+
+<p>syntax</p>
+<code>
+    confirm(message)
+
+</code>
+
+
+
+<script>
+    //lets see some examples of alert, prompt and confirm
+
+    // alert
+
+    alert('your website is live now');
+
+    // prompt
+
+    let name = prompt('what is your name ?');
+
+    document.write('welcome ' + name);
+
+    // confirm
+
+    let result = confirm('are you sure that you want to proceed with the username ' + name + ' ?');
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>
