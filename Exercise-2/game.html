@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake water gun game</title>
+</head>
+
+<body>
+    <h1>welcome to snake water gun game</h1>
+    <p>you have to choose between snake water and gun</p>
+    <p>you will play 10 rounds against computer</p>
+    <p>you will get 1 point for each win</p>
+    <p>you will get 0 point for each draw</p>
+    <p>you will get -1 point for each loss</p>
+    <p>you can see your score at the end of the game</p>
+    <br>
+    <br>
+
+
+    <script>
+        const arrChoice = ['s', 'w', 'g'];
+        const compChoice = arrChoice[Math.floor(Math.random() * arrChoice.length)];
+        let userChoice =prompt("enter your choice");
+        let compScore = 0;
+        let userScore = 0;
+
+        if (userChoice == compChoice) {
+            alert("draw");
+        } else if (userChoice == 's' && compChoice == 'w') {
+            alert("user wins");
+            userScore++;
+        } else if (userChoice == 's' && compChoice == 'g') {
+            alert("computer wins");
+            compScore++;
+        } else if (userChoice == 'w' && compChoice == 's') {
+            alert("computer wins");
+            compScore++;
+        } else if (userChoice == 'w' && compChoice == 'g') {
+            alert("user wins");
+            userScore++;
+        } else if (userChoice == 'g' && compChoice == 's') {
+            alert("user wins");
+            userScore++;
+        } else if (userChoice == 'g' && compChoice == 'w') {
+            alert("computer wins");
+            compScore++;
+        } else {
+            console.error();("invalid input");
+        }
+
+    
+
+
+
+
+
+    </script>
+</body>
+
+</html>
