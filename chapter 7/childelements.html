@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    the head tag is a child elememt of the html tag
+</head>
+<body>
+    the body tag is a child elememt of the html tag
+
+    <div class="child">
+        this div tag is a child element of the body tag
+
+        <p>this paragrapgh tag is a child of the div tag</p>
+        
+    </div>
+    <!-- now how to acess these childnodes in javascript
+    lets see -->
+    <script>
+        // now lets see the childnodes of document
+        console.log(document.childNodes);
+
+        // now lets see the childnodes of body
+        console.log(document.body.childNodes);
+
+        // now lets see the childnodes of div
+
+        console.log(document.body.childNodes[1].childNodes);
+
+        // note : the blank spaces are also considered as childnodes i.e; #text nodes
+
+    </script>
+</body>
+</html>
