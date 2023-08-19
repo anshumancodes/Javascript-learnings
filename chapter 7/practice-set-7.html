@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice set 7</title>
 </head>
+
 <body>
-    
+    <!-- create a nav bar and change color of its first element to red -->
+
+    <nav>
+        <a href="">home </a>
+        <a href="">about </a>
+        <a href="">contact </a>
+    </nav>
+    <br>
+
+    <!-- create a table without tbody -->
+    <table>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <div class="parent">
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+    </div>
+
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+    <li>d</li>
+    <li>e</li>
+
+    <script>
+        document.body.firstElementChild.firstElementChild.style.color = "red";
+
+        let parent = document.getElementsByClassName('parent');
+
+        //    create a parent element and change the color of its first and last child to blue and green respectively
+
+        parent[0].firstElementChild.style.color = "blue";
+
+        parent[0].lastElementChild.style.color = "green";
+
+
+        //    seleted all li elements and chnage their color to cyan
+
+        let x = document.getElementsByTagName('li');
+
+        let liArray = Array.from(x);
+        console.log(x);
+
+        liArray.forEach(element => {
+            element.style.color = "cyan";
+        });
+
+    </script>
+
 </body>
+
 </html>
