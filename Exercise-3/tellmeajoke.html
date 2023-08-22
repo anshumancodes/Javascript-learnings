@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell me a joke </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            gap: 20px;
+            margin-top: 10vh;
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .Joke{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5vh;
+            text-align: center;
+        }
+        footer{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 10vh;
+            font-size:1.2rem;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <h2>Tell me a joke :)</h2>
+    <p>refresh the website to see a new joke!</p>
+
+    <span class="Joke"></span>
+    </div>
+
+    <footer>
+        made with ❤️ by <a href="twitter.com/anshumancdx"> Anshuman</a>
+    </footer>
+
+
+    <script>
+        const jokes = [
+    "Why did the JavaScript developer go broke? Because he used up all his cache.",
+    "Why did the JavaScript developer go to the school? To improve his `class` attributes.",
+    "Why did the array go to the doctor? Because it had too many `undefined` values.",
+    "Why did the developer stay calm? Because he was in `debug` mode.",
+    "How do you comfort a JavaScript bug? You `console` it.",
+    "Why was the function feeling bad? It didn’t get called.",
+    "Why did the JavaScript developer go to the bar? To parse a token.",
+    "How did the developer announce their engagement? 'We’re in a bind!'",
+    "Why was the JavaScript file at the gym? It was trying to reduce its fat arrow functions.",
+    "Why did the developer sit quietly? Because he wanted to await a promise.",
+    "How do JavaScript developers break up? They just call it off().",
+    "Why did the React component go broke? Because it lacked `state`.",
+    "Why did the developer always smile at the computer? Because it returned a promise.",
+    "Why did the web developer go broke? Because he used too many `cookie`s.",
+    "How do you praise a CSS developer? 'That's some style you've got!'",
+    "Why did the developer get thrown out of school? For using too many `hook`s.",
+    "Why did the web developer's plant die? It didn't get enough cache sun.",
+    "How do you make an asynchronous salad? With `async` and `await`.",
+    "Why do JavaScript developers prefer dark mode? Because light attracts bugs.",
+    "Why did the React developer feel safe? Because he was in his own component.",
+    "Why did the web developer stay calm during the bug storm? Because they always knew how to `debug`.",
+    "Why did the developer go to the bank? To check his `balanceOf`.",
+    "How did the developer die? By a `null pointer exception`.",
+    "Why don't programmers like nature? It has too many bugs.",
+    "How did the developer express their love? They said, 'I callback you'.",
+    "Why did the JavaScript function always get invited? Because it was a first-class citizen.",
+    "Why did the web app go on a diet? It had too much `bloat`.",
+    "Why was the website insecure? It had too many vulnerabilities.",
+    "Why did the developer prefer dark coffee? Because it had no Java.",
+    "Why did the front-end developer get lost? Because he lost his `path`.",
+    "Why was the JavaScript date unhappy? Because it was always getting `parsed`.",
+    "How do you serve a JavaScript file? With a side of `JSON`.",
+    "Why was the JavaScript file always in a hurry? It wanted to `async` up things.",
+    "How do you make a JavaScript sandwich? With an `array` of ingredients.",
+    "Why did the developer have problems with his girlfriend? She had too many `issues`.",
+    "Why did the function break up with the string? It had too many escape sequences.",
+    "How do you organize a JavaScript party? You `JSON` it.",
+    "Why did the front-end developer go to therapy? Because he had too much `inner conflict`.",
+    "Why was the web developer sad? Because he didn’t like his `Cookies`.",
+    "Why did the developer always get lost? Because he couldn't find his `route`.",
+    "Why did the developer go to the beach? To surf the web.",
+    "Why did the JavaScript array hate working out? It didn't like to push its limits.",
+    "Why did the developer keep his functions clean? He didn't want side effects.",
+    "Why did the developer get thrown out of the restaurant? For dropping too many tables.",
+    "Why did the JavaScript code fail the exam? It didn't catch enough errors.",
+    "Why was the developer always positive? Because he was non-negative.",
+    "Why did the developer go to the doctor? He had a bad case of loops.",
+    "Why did the developer hate rainy days? It was bad for the site.",
+    "How do you greet a JavaScript developer? 'Hello, world!'"
+];
+
+let joke = document.querySelector('.Joke');
+
+joke.innerHTML = jokes[Math.floor(Math.random() * jokes.length)];
+    </script>
+</body>
+</html>
