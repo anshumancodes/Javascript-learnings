@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion methods in js</title>
+</head>
+
+<body>
+    before
+    <div class="container">
+    
+    this is the container
+
+    </div>
+    after
+    <script>
+        let container = document.querySelector('.container');
+
+        let h1 = document.createElement('h1');
+        h1.innerHTML = "Hello World";
+        // container.appendChild(h1);
+        // container.prepend(h1);
+        // container.append(h1);
+        // container.before(h1);
+        // container.after(h1);
+
+        // note: comment out each of the above commented line and see the difference
+
+
+    </script>
+    <!-- explore more : https://developer.mozilla.org/en-US/docs/Web/API/Element/ -->
+</body>
+
+</html>
