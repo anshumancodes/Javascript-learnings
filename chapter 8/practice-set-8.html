@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice set 8</title>
+    <style>
+        .bulb {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background-color:red;
+            border: 2px solid black;
+            color: aliceblue;
+            display: block;
+            margin-top: 20vh;
+        }
+
+        .bulb.blue{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Q1: write a program to show different alerts when different buttons are clicked -->
+    <h2>click to see alert</h2>
+    <button>submit</button>
+    <button>delete</button>
+    <button>update</button>
+
+    <!-- Q2: create a bulb and change its bg color every 1 sec using classlist toggle-->
+
+   <button class="bulb">bulb</button>
+
+    <script>
+        //  Q1:
+        let btns = document.getElementsByTagName('button');
+        let btnarr = Array.from(btns);
+
+        btnarr.forEach(function(element){
+            element.addEventListener('click', function(){
+                alert(element.innerText);
+            })
+        })
+        console.log(btns);
+
+        // Q2: 
+
+        setInterval(() => {
+            let bulb = document.querySelector('.bulb');
+            bulb.classList.toggle('blue');
+        }, 1000);
+
+
+
+        
+    </script>
+</body>
+
+</html>
