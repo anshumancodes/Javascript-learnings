@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #4A90E2; /* Changed to a deep blue color */
+    font-family: 'Arial', sans-serif;
+    flex-direction: column;
+}
+
+.clock {
+    font-size: 3em;
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #ECECEC; /* Light gray color for the text */
+}
+
+span {
+    letter-spacing: 2px;
+}
+footer{
+    margin-top: 10vh;
+    font-size: medium;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+    </div>
+    <footer>made with 
+        <span style="color: red;">&hearts;</span> by <a href="">anshumancodes</a>"
+    </footer>
+    <script>
+        
+
+       setInterval(() => {
+        let date=new Date();
+            let hours=String(-12+date.getHours())
+            let minutes=String(date.getMinutes())
+            let seconds=String(date.getSeconds())
+
+            document.getElementById('hours').innerText=hours+'h'
+            document.getElementById('minutes').innerText=minutes+'m'
+            document.getElementById('seconds').innerText=seconds+'s'
+
+        
+       }, 1000);
+    </script>
+</body>
+</html>
