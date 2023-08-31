@@ -7,10 +7,12 @@ Building projects is very important to polish your development skills.This is di
 checkout: readme.md of each indivisual project to understand what we need to build, what concepts we are going to need 
 
 ## Projects
+-------------------------------------
 
-- [] denotes not avilable yet  
+- [ ] not avilable yet  
 
-- [x] avilable
+- [x] denotes  Avilable
+-------------------------------------
 
 - [] Javascript drum setup
 - [] Quiz app
