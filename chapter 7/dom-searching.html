@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button-con{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #btn{
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- lets create a button element to check mehtods to acess it using js   -->
+    <div class="button-con">
+        <button id="btn" class="button-element">Click Me</button>
+    </div>
+    <script>
+        // lets select the button element using js
+
+        let button=document.getElementById('btn');
+
+        button.addEventListener('click',function(){
+            button.style.backgroundColor="red";
+        });
+
+        // over here we have selected the button element using the id of the button element by using the getElementById method
+
+        // now lets select the button element using the class of the button element
+
+        let button2=document.getElementsByClassName('button-element');
+
+        button2[0].addEventListener('click',function(){
+            button2[0].style.backgroundColor="blue";
+        });
+
+        // over here we have selected the button element using the class of the button element by using the getElementByClassName method
+
+        
+         
+    </script>
+</body>
+</html>
