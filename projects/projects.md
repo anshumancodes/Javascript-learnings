@@ -14,7 +14,7 @@ checkout: readme.md of each indivisual project to understand what we need to bui
 - [x] denotes  Avilable
 -------------------------------------
 
-- [ ] Javascript drum setup
+- [x] Javascript drum setup
 - [ ] Quiz app
 - [ ] Sidebar Using Html, Css, and JavaScript
 - [ ] Chatbot Using Html, Css, and JavaScript
