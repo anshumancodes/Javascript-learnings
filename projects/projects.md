@@ -16,7 +16,7 @@ checkout: readme.md of each indivisual project to understand what we need to bui
 
 - [x] Javascript drum setup
 - [ ] Quiz app
-- [ ] Sidebar Using Html, Css, and JavaScript
+- [x] Sidebar Using Html, Css, and JavaScript
 - [ ] Chatbot Using Html, Css, and JavaScript
 - [ ] Music Player AppUsing Html, Css, and JavaScript
 - [ ] Food delivery app using html css js
