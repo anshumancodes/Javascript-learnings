@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        nav {
+            background:#FFFCF2;
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            border-right: 1px solid grey;
+            width:5%;
+            height: 100vh;
+          
+        }
+        nav.nav-full{
+            width: 14%;
+            height: 100vh;
+        }
+        .hidden{
+
+        }
+
+        .menu-container,
+        .nav-links-hidden {
+           
+            margin-top: 2vh;
+            margin-left: 2vw;
+
+        }
+
+        .menu-container span {
+            font-size: 3rem;
+            cursor: pointer;
+        }
+
+        nav .nav-links-hidden {
+
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            margin-bottom: 2vh;
+        }
+        nav .nav-links-hidden a{
+            font-size: 1rem;
+            display: flex;
+            
+            align-items: center;
+            gap: 1vw;
+            color: black;
+        }
+        nav .nav-links-hidden a span {
+            font-size: 2rem;
+        }
+        i{
+            display: none;
+        }
+        i.active{
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="menu-container">
+            <span class="material-icons" id="toggler">
+                menu
+            </span>
+        </div>
+        <div class="nav-links-hidden">
+
+            <a href="" class="nav-ele"><span class="material-icons">event_busy</span><i>Event</i></a>             
+            <a href="" class="nav-ele"><span class="material-icons">offline_share</span><i>Offline share</i></a>
+            <a href="" class="nav-ele"><span class="material-icons">auto_mode</span><i>auto mode</i></a>
+            <a href="" class="nav-ele"><span class="material-icons">place</span><i>place</i></a>
+            <a href="" class="nav-ele"><span class="material-icons">maps_home_work</span><i>maps</i></a>
+            <a href="" class="nav-ele"><span class="material-icons">near_me_disabled</span><i>near by me</i></a>
+
+        </div>
+    </nav>
+    <script>
+        let toggler = document.querySelector('#toggler');
+        let navElements=document.getElementsByTagName('i');
+        naveleArr=Array.from(navElements);  //converts html collection to array 
+
+       
+
+
+        let nav=document.querySelector('nav');
+        
+
+        naveleArr=Array.from(navElements);
+
+        toggler.addEventListener('click',()=>{
+           nav.classList.toggle('nav-full');
+        
+              naveleArr.forEach((ele)=>{
+                ele.classList.toggle('active');
+              })
+
+              toggler.innerText=(toggler.innerHTML=='close')?'menu':'close';
+
+           
+        })
+
+
+
+    </script>
+</body>
+
+</html>
