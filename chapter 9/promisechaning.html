@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let one =new Promise((resolve,reject)=>{
+            setTimeout(()=>resolve("initing the chain"),1000);
+        });
+
+        one.then((result)=>{
+            console.log(result);
+            let two = new Promise((resolve,reject)=>{
+                setTimeout(()=>resolve("second promise"),1000);
+            });
+            return two;
+        }).then((result)=>{
+            console.log(result);
+
+            console.log("the second promise is done");
+
+        });
+    </script>
+    
+</body>
+</html>
