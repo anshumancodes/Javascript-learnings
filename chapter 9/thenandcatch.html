@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        let a = new Promise((resolve, reject) => {
+            setTimeout(() => resolve("done"), 1000);
+            // reject(new Error("…")); 
+
+
+        });
+        // let b = new Promise((resolve, reject) => {
+        //     setTimeout(() => reject(new Error("Whoops!")), 2000);
+        // });
+
+
+        // .then(f, g) is the same as .then(f).catch(g)
+        //however , we can use .then if you want to handle both the result and the error or the result only
+        // a.then((result) => {
+        //     console.log(result);
+        // });
+        a.then((result) => {
+            console.log("the developer is happy");
+        }, (error) => {
+            console.log("oops! the developer forgot his coffee lol");
+
+            // this will throw an error because we got a error for the promise a
+        });
+        
+        // we can use .catch(f) which is the same as b.then(null, f) , that is only handle the error and not the result
+        // b.catch((error)=>{
+
+        //     console.log("oops! the developer made a mistake");
+
+        // }); // .catch(f) is the same as b.then(null, f) , catch 
+
+        
+        
+        
+        // read more about then and catch here :
+
+        // https://javascript.info/promise-basics#then-and-catch
+
+        //
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+        //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch
+
+
+    </script>
+</body>
+</html>
