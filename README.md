@@ -25,14 +25,22 @@ install prompt-sync by running:
  npm install prompt-sync 
  ```
 
+## Community
+
+join my dev community : https://discord.gg/fUYGNhghh2
+
 ## Exercises
  Note: you need you need go through Exercise-1 directory before proceeding to Chapter 6
+
+## Solve!
+Solve dir contents problem statements that very common while build web products , go through them and solve those
  
 ## Feedback
 
 
 
 If you have any questions, suggestions, or feedback, please feel free to reach out to me at anshumanprof01@gmail.com or on twitter : anshumancdx
+
 
 
 ## Badges
