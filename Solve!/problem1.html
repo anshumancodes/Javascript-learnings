@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing with CSS Variables and JS </title>
+    <style>
+        :root{
+            --spacing: 10px;
+            --blur: 10px;
+            --base: #ff0000;
+
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .photo-container{
+            margin-top: 50px;
+            background: var(--base);
+            padding: var(--spacing);
+            filter: blur(var(--blur));
+        }
+
+    </style>
+</head>
+<body>
+    <!-- create a editor to change spacing , base color , and blue of a photo container -->
+
+    <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+    <div class="controller">
+        <label for="spacing">Spacing:</label>
+        <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px">
+        <label for="blur">Blur:</label>
+        <input type="range" name="blur" id="blur" min="0" max="25" value="10" data-sizing="px">
+        <label for="base">Base Color</label>
+        <input type="color" name="base" id="base" value="#ffc600">
+    </div>
+    <div class="photo-container">
+        <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500" alt="photo">
+    </div>
+    <script>
+        const userInputs = document.querySelectorAll('.controller input');
+
+        function updateCSS() {
+            
+            const suffix = this.dataset.sizing || '';
+            console.log(this.name);
+            console.log(this.value + suffix);
+            document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix);
+
+            
+        }
+        userInputs.forEach(i => {
+            
+            i.addEventListener('change',updateCSS);
+            i.addEventListener('mousemove',updateCSS);
+        });
+    </script>
+</body>
+</html>
