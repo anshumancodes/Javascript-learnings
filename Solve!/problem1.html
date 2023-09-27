@@ -44,11 +44,17 @@
         const userInputs = document.querySelectorAll('.controller input');
 
         function updateCSS() {
-            
+            // this is a reference to the input element in non-stric mode
+            // in strict mode it will be undefined and can be assigned custom value
+
+            // suffix variable gets the unit of the input value and if it is not present it will be empty string (for color or hex value)
             const suffix = this.dataset.sizing || '';
-            console.log(this.name);
-            console.log(this.value + suffix);
-            document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix);
+            // console.log(this.name); // just to check the name of the input element is right or not
+
+            console.log(this.value + suffix); // just to check the value of the input element is right or not
+            document.documentElement.style.setProperty(`--${this.name}`,this.value + suffix); // this will update the css variable
+
+            // learn about setProperty() method here: https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/setProperty
 
             
         }
