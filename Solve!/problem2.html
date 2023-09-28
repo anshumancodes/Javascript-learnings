@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallary</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+        .container img{
+            width: 380px;
+            height:380px;
+        }
+        .container img.active{
+            transform: scale(2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <img src="https://storage.googleapis.com/pai-images/e5e3c4549cc34e0284964fa9107d4c87.jpeg" alt="">
+        <img src="https://storage.googleapis.com/pai-images/e665a193732849a28c9b86549f3ccd89.jpeg" alt="">
+       
+        <img src="https://storage.googleapis.com/pai-images/d15f556aa68e457690f8dbd469b34c4c.jpeg" alt="">
+        <img src="https://storage.googleapis.com/pai-images/d04db3f5fc7c4580bd61d2fe328f5467.jpeg" alt="">
+        <img src="https://storage.googleapis.com/pai-images/cd7865052a884799b19defd54c4b60de.jpeg" alt="">
+
+    </div>
+
+    <script>
+        
+        const imgs = document.querySelectorAll('.container img');
+
+        function removeClass(){
+            imgs.forEach(img => img.classList.remove('active'));
+        }
+
+        imgs.forEach(img => img.addEventListener('click', () => {
+            removeClass();
+            img.classList.add('active');
+        }));
+    </script>
+    
+</body>
+</html>
